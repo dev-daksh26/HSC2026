@@ -1,0 +1,20 @@
+# --- Web app ---
+fastapi
+uvicorn[standard]
+python-multipart
+python-jose[cryptography]
+pydantic
+
+# --- Imaging / PDF ---
+numpy<2.4
+Pillow
+PyPDF2
+PyMuPDF            # renders scanned-PDF pages (no Poppler install needed)
+
+# --- OCR: PaddleOCR (default) ---
+paddlepaddle
+paddleocr
+
+# --- OCR: Tesseract (optional fallback) ---
+# pytesseract
+# pdf2image
